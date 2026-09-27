@@ -1,0 +1,163 @@
+:root {
+  --font-main: Georgia, "Times New Roman", serif;
+  --paper: #e5e1e1;
+  --ink: #000;
+  --soft-ink: color-mix(in srgb, var(--ink) 65%, transparent);
+  --page-gap: 3rem;
+}
+
+body {
+  font-family: var(--font-main);
+  color: var(--ink);
+  background-color: var(--paper);
+}
+
+/* links */
+a {
+  color: var(--ink);
+}
+
+.page {
+  max-width: 760px;
+  /* no padding on the top, but sides and bottom have padding */
+  padding: 0 var(--page-gap) var(--page-gap);
+}
+
+/* header */
+.site-header {
+  margin-bottom: 2rem;
+  /* tops and sides have padding. no padding on bottom */
+  padding: var(--page-gap) var(--page-gap) 0;
+}
+
+.site-name {
+  font-size: 1.5rem;
+}
+
+.site-name a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* navigation bar */
+.site-nav a {
+  color: var(--soft-ink);
+  text-decoration: none;
+}
+
+.site-nav a:hover,
+.site-nav a[aria-current="page"] {
+  color: var(--ink);
+  text-decoration: underline;
+}
+
+.section {
+  position: relative;
+  margin-top: 72px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.section p {
+  text-wrap: pretty;
+}
+.section p.bio {
+  font-size: 1.2rem;
+}
+
+.degree-year {
+  color: var(--soft-ink);
+}
+
+.site-footer {
+  margin-top: 72px;
+  color: var(--soft-ink);
+}
+
+/* projects AI page */
+.page-wide {
+  max-width: 1320px;
+}
+
+.page-wide .bio {
+  max-width: 760px;
+}
+
+.project + .project {
+  margin-top: 2rem;
+}
+
+.project-date,
+.project-meta,
+.project-tools {
+  color: var(--soft-ink);
+}
+
+.project-date {
+  margin-bottom: 0.25rem;
+}
+
+.project-meta,
+.project-description {
+  margin-bottom: 0.5rem;
+}
+
+.project-tools {
+  font-size: 0.9rem;
+}
+
+.project-links {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.project-links a {
+  color: inherit;
+}
+
+.project-image {
+  border: 1px solid var(--soft-ink);
+}
+
+/* personal photography gallery */
+
+/* the button that is the photo. make it unseen. */
+.gallery-button {
+  position: relative;
+  display: block;
+  background: none;
+  border: none;
+  transition: transform 0.3s ease;
+}
+
+/* make the photo a little zoomed in when you hover over it */
+.gallery-button:hover {
+  transform: scale(1.02);
+}
+
+/* show caption on top of photo when clicked */
+.photo-caption {
+  position: absolute;
+  background: var(--paper);
+  color: var(--ink);
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.photo-date {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.photo-notes {
+  display: block;
+}
