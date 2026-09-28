@@ -4,6 +4,7 @@ A personal homepage for Milena Perez-Gerus, a graduate student in data science.
 
 - **Live site:** https://mimiperezg.github.io/homepageMilenaPerezGerus/
 - **Video demo:** [Watch on YouTube](https://youtu.be/jEt1bAIyMLc)
+- **Presentation video:** [Watch the presentation on YouTube](https://youtu.be/kWIJGwc1uCM)
 - **Design document:** [Design document (PDF)](files/Design_Document.pdf)
 - **Slides:** [Presentation](https://docs.google.com/presentation/d/1QSY7nMKCLDU5cDD0nmgX8FAsuz2XTPXPa5Cv53TdilM/edit?usp=sharing)
 
